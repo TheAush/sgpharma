@@ -126,18 +126,24 @@
     </section>
 
     <section id="form-details">
-      <form action="">
+      <form action="https://api.web3forms.com/submit" method="POST">
         <span>Leave a message</span>
         <h2>We love to hear from you</h2>
-        <input type="text" placeholder="Your name" />
-        <input type="text" placeholder="E-mail" />
-        <input type="text" placeholder="Subject" />
+        <input
+          type="hidden"
+          name="access_key"
+          value="f56d8f84-f8fd-48e9-a370-7f109c2c552a"
+        />
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="text" name="subject" placeholder="Subject" required />
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="10"
           placeholder="Your message"
+          required
         ></textarea>
         <button class="normal">Submit</button>
       </form>
@@ -201,11 +207,11 @@
       <div class="sec">
         <div class="col">
           <h4>About</h4>
-          <a href="#">About Us</a>
-          <a href="#">Delivery Information</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms and Condition</a>
-          <a href="#">Contact Us</a>
+          <a href="about.html">About Us</a>
+          <a href="delivery.html">Delivery Information</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="t&c.html">Terms and Condition</a>
+          <a href="contact.html">Contact Us</a>
         </div>
 
         <div class="col">
@@ -232,7 +238,7 @@
       </div>
 
       <div class="copyright">
-        <p>© 2024 All rights reserved!</p>
+        <p>&copy; 2024 SG Pharmaceuticals. All rights reserved.</p>
       </div>
     </footer>
 
